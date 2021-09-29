@@ -1,5 +1,1 @@
-when HTTP_RESPONSE {
-  if { [HTTP::status] == 404} {
-    HTTP::redirect "https://api-porta.nyc.gov"
-  }
-}
+window.location.replace('https://api-portal.nyc.gov/')
