@@ -1,3 +1,5 @@
-<http>
-Hello World!
-</http>
+when HTTP_RESPONSE {
+  if { [HTTP::status] == 404} {
+    HTTP::redirect "https://api-porta.nyc.gov"
+  }
+}
